@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CameraX</string>
+
+    <!--    Common Use-->
+    <string name="common_btn_back_desc">Back Button</string>
+    <string name="common_capture">Mengambil gambar</string>
+    <string name="common_save_capture">Menyimpan gambar</string>
+    <string name="edit_profile_capture_id_card_cancel">Cancel</string>
+</resources>
