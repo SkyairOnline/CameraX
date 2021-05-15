@@ -15,14 +15,14 @@ object ImageFile {
     @Throws(IOException::class)
     fun createImageFile(baseFolder: File): File {
         val timeStamp = SimpleDateFormat("yyyy-MM-dd-HH-mm-ss-SSS", Locale.US).format(System.currentTimeMillis())
-        return File(baseFolder, "banksaham_${timeStamp}.jpg")
+        return File(baseFolder, "${timeStamp}.jpg")
     }
 
     /** Use external media if it is available, our app's file directory otherwise */
     fun getOutputDirectory(context: Context): File {
         val appContext = context.applicationContext
         val mediaDir = context.externalMediaDirs.firstOrNull()?.let {
-            File(it, "Bank Saham").apply { mkdirs() } }
+            File(it, "SkyairOnline CameraX").apply { mkdirs() } }
         return if (mediaDir != null && mediaDir.exists())
             mediaDir else appContext.filesDir
     }
